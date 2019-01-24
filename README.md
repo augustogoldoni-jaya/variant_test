@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to setup the Rails variant view.
 
-Things you may want to cover:
+First check the file `application_controller.rb` you will find the `set_variant` method there that is doing the magic
 
-* Ruby version
+After that, just checkout the view, all you need to do is create the view with a `+name-of-variant` just in between `html` and  `erb`, so for eg: `html+webmd.erb`
 
-* System dependencies
+To test this project all you need to to is access: 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Create and migrate the db
+- `localhost:3000` or `webmd.localhost:3000`
