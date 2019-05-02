@@ -12,10 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_01_24_112712) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "hosts", force: :cascade do |t|
+  create_table "hosts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "url"
     t.string "code"
     t.datetime "created_at", null: false
